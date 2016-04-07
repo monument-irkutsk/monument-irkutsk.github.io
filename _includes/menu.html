@@ -1,6 +1,7 @@
 <nav id="menu">
     <div class="inner">
         <ul class="links">
+            <li><a href="{{ site.baseurl | prepend: site.url }}">Главная</a></li>
             {% for p in site.pages %}
             <li><a href="{{ p.url }}">{{ p.title }}</a></li>
             {% endfor %}
