@@ -1,7 +1,11 @@
-@import '_sass/libs/vars';
-@import '_sass/libs/functions';
-@import '_sass/libs/mixins';
-@import '_sass/libs/skel';
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
 @import 'font-awesome.min.css';
 @import "source-sans-pro.css";
 @import "raleway.css";
@@ -34,25 +38,25 @@
 
 // Base.
 
-	@import '_sass/base/page';
-	@import '_sass/base/typography';
+	@import 'base/page';
+	@import 'base/typography';
 
 // Component.
 
-	@import '_sass/components/section';
-	@import '_sass/components/form';
-	@import '_sass/components/box';
-	@import '_sass/components/icon';
-	@import '_sass/components/image';
-	@import '_sass/components/list';
-	@import '_sass/components/table';
-	@import '_sass/components/button';
-	@import '_sass/components/features';
+	@import 'components/section';
+	@import 'components/form';
+	@import 'components/box';
+	@import 'components/icon';
+	@import 'components/image';
+	@import 'components/list';
+	@import 'components/table';
+	@import 'components/button';
+	@import 'components/features';
 
 // Layout.
 
-	@import '_sass/layout/header';
-	@import '_sass/layout/menu';
-	@import '_sass/layout/banner';
-	@import '_sass/layout/wrapper';
-	@import '_sass/layout/footer';
+	@import 'layout/header';
+	@import 'layout/menu';
+	@import 'layout/banner';
+	@import 'layout/wrapper';
+	@import 'layout/footer';
