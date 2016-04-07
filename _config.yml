@@ -11,7 +11,7 @@ description: >
   Супер мена памятники и монументы в Иркутске от профессионалов своего дела!!!
 baseurl: ""
 url: "https://xn--80aqaaicakjrsnfho7p.xn--p1ai"
-#partnerurl: "http://bs2p.ru"
+partnerurl: "http://bs2p.ru"
 social:
 
 # Build settings
