@@ -1,0 +1,32 @@
+# Site settings
+title: Памятники в Иркутске
+slogan: Байкальский камнераспиловочный завод
+email: bspp@rambler.ru
+phone: "+7 (3952) 41-80-08"
+fax: "+7 (3952) 41-80-08"
+address: >
+664033, Россия, г. Иркутск <br>
+ул. Старокузьмихинская, 41д
+description: >
+baseurl: ""
+url: "https://xn--80aqaaicakjrsnfho7p.xn--p1ai"
+partnerurl: "http://bs2p.ru"
+social:
+
+# Build settings
+markdown: kramdown
+
+# Permalinks
+permalink: none
+
+# Files/Folders to be excluded from generated _site folder
+exclude:
+  - CNAME
+  - .gitignore
+  - .sass-cache
+  - README.md
+
+# Sass conversion config
+sass:
+  sass_dir: assets/css/_sass
+  style: compressed

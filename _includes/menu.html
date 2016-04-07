@@ -1,0 +1,10 @@
+<nav id="menu">
+    <div class="inner">
+        <ul class="links">
+            {% for p in site.pages %}
+            <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+            {% endfor %}
+        </ul>
+        <a href="#" class="close">Закрыть</a>
+    </div>
+</nav>
