@@ -584,4 +584,32 @@
 
 	};
 
+	/**
+	 * Add simple "dotted" navigation to Fancybox jQuery plugin.
+	 */
+	$.addLinks = function() {
+		var list = $("#links");
+
+		if (!list.length) {
+			list = $('<ul id="links">');
+
+			for (var i = 0; i < this.group.length; i++) {
+				$('<li data-index="' + i + '"><label></label></li>').click(function() {
+					$.fancybox.jumpto( $(this).data('index'));
+				}).appendTo( list );
+			}
+
+			list.appendTo( 'body' );
+		}
+
+		list.find('li').removeClass('active').eq( this.index ).addClass('active');
+	};
+
+	/**
+	 * Remove simple "dotted" navigation fancybox jQuery plugin.
+	 */
+	$.removeLinks = function() {
+		$("#links").remove();
+	};
+
 })(jQuery);

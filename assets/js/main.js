@@ -21,7 +21,8 @@
 		var	$window = $(window),
 			$body = $('body'),
 			$header = $('#header'),
-			$banner = $('#banner');
+			$banner = $('#banner'),
+			$fancybox = $('.fancybox');
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
@@ -159,6 +160,17 @@
 						if (event.keyCode == 27)
 							$menu._hide();
 
+				});
+
+		// Fancybox image
+			$fancybox
+				.fancybox({
+					nextEffect: 'fade',
+					prevEffect: 'fade',
+					padding: 0,
+					margin: [15, 15, 40, 15],
+					afterLoad: $.addLinks,
+					beforeClose: $.removeLinks
 				});
 
 	});
