@@ -170,6 +170,7 @@
 					padding: 0,
 					margin: [76, 15, 40, 15],
 					fitToView: false,
+					autoWidth: true,
 					afterLoad: $.addLinks,
 					beforeClose: $.removeLinks,
 					helpers: {
