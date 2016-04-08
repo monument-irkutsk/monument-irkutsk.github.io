@@ -168,7 +168,7 @@
 					nextEffect: 'fade',
 					prevEffect: 'fade',
 					padding: 0,
-					margin: [76, 15, 40, 15],
+					margin: [$header.outerHeight() + 20, 15, 40, 15],
 					fitToView: false,
 					maxWidth: "90%",
 					afterLoad: $.addLinks,
