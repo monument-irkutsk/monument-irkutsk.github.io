@@ -168,9 +168,15 @@
 					nextEffect: 'fade',
 					prevEffect: 'fade',
 					padding: 0,
-					margin: [15, 15, 40, 15],
+					margin: [76, 15, 40, 15],
+					fitToView: false,
 					afterLoad: $.addLinks,
-					beforeClose: $.removeLinks
+					beforeClose: $.removeLinks,
+					helpers: {
+						title: {
+							type: 'over'
+						}
+					}
 				});
 
 	});
