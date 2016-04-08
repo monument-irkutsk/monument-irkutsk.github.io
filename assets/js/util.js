@@ -608,7 +608,7 @@
 	/**
 	 * Remove simple "dotted" navigation fancybox jQuery plugin.
 	 */
-	$.removeLinks = function($id) {
+	$.removeLinks = function() {
 		$("#links").remove();
 	};
 
