@@ -27,7 +27,7 @@
             {% for social in site.socials %}
             <li class="fa-{{ social.class }}"><a href="https://{{ social.url }}">{{ social.url }}</a></li>
             {% endfor %}
-            <li class="fa-rss"><a href="{{ '/feed.xml' | prepend: site.baseurl }}">Подписаться на новости через RSS</a></li>
+            <!--<li class="fa-rss"><a href="{{ '/feed.xml' | prepend: site.baseurl }}">Подписаться на новости через RSS</a></li>-->
         </ul>
         <ul class="copyright">
             <li>{{ site.time | date: '%Y' }} &copy; <a href="{{ site.partnerurl }}" target="_blank">ООО «БКЗ»</a>. Все права защищены.</li>
