@@ -42,7 +42,7 @@
 				e.preventDefault();
 				$.ajax({
 					type: 'POST',
-					url: 'https://api.xn--80aqaaicakjrsnfho7p.xn--p1ai/',
+					url: 'https://monument-irkutsk.arsen.pw/',
                     crossDomain: false,
                     data: $form.serialize(),
                     dataType: 'json',
