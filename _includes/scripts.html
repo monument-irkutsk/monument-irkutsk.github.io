@@ -4,5 +4,24 @@
 <script src="/assets/js/jquery.fancybox.pack.js"></script>
 <script src="/assets/js/util.js"></script>
 <!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+<script type="text/javascript">
+jQuery(document).ready(function($){
+var fl1=false;
+var parts = window.location.search.substr(1).split("&");
+var $_GET = {};
+for (var i = 0; i < parts.length; i++) {
+    var temp = parts[i].split("=");
+    $_GET[decodeURIComponent(temp[0])] = decodeURIComponent(temp[1]);
+}
+if (document.cookie.indexOf('st=yandexdirect') == -1) {
+ if ($_GET['utm_source'] == 'yandexdirect') {
+  var date = new Date( new Date().getTime() + 365*24*60*60*1000 );
+  document.cookie="st=yandexdirect; path=/; domain=xn--80aqaaicakjrsnfho7p.xn--p1ai; expires="+date.toUTCString();
+  fl1=true;
+ }
+}
+if (document.cookie.indexOf('st=yandexdirect') != -1 || fl1) $('.cphone').text('640-396');
+});
+</script>
 <script src="/assets/js/main.js"></script>
 <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37514510 = new Ya.Metrika({ id:37514510, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/37514510" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
