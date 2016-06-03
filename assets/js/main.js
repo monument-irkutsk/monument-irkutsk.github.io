@@ -22,6 +22,7 @@
 			$body = $('body'),
 			$header = $('#header'),
 			$banner = $('#banner'),
+			$form = $('#contactForm'),
 			$fancybox = $('.fancybox');
 
 		// Disable animations/transitions until the page has loaded.
@@ -35,6 +36,26 @@
 
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
+		
+		// AJAX send message from contact form on this site.
+			$form.submit(function (e) {
+				e.preventDefault();
+				$.ajax({
+					type: 'POST',
+					url: 'https://api.xn--80aqaaicakjrsnfho7p.xn--p1ai/',
+                    crossDomain: false,
+                    data: $form.serialize(),
+                    dataType: 'json',
+                    success: function (response) {
+                        if (response.type == 'error') {
+                            alert(response.text);
+                        } else {
+                            alert(response.text);
+                            $form.find('#message').val('');
+                        }
+                    }
+				});
+			});
 
 		// Prioritize "important" elements on medium.
 			skel.on('+medium -medium', function() {
